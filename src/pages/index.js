@@ -21,3 +21,12 @@ export default function Home() {
 }
 
 
+export async function getStaticProps() {
+  const url = `https://fakestoreapi.com/products`;
+  const { data, status, statusText } = await axios.get(url);
+  const messages = null;
+
+  return {
+    props: {},
+  };
+}
