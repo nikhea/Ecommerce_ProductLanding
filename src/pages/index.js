@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Styled from "styled-components";
 import tw from "twin.macro";
-import axios from "axios";
+import { getProducts } from "../../services/products";
 
 const AppContainer = Styled.div`
-${tw`flex w-full h-full h-screen overflow-hidden bg-gray-400`}
+${tw`flex w-full h-full overflow-hidden bg-gray-400`}
 
 `;
-export default function Home() {
+export default function Home({products}) {
   return (
     <AppContainer>
       <Head>
@@ -16,17 +16,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       iuifytc
+      {/* {messages} */}
+      {JSON.stringify(products)} 
     </AppContainer>
   );
 }
 
-
 export async function getStaticProps() {
-  const url = `https://fakestoreapi.com/products`;
-  const { data, status, statusText } = await axios.get(url);
-  const messages = null;
+  const products = await getProducts();
+
+  console.log(products);
 
   return {
-    props: {},
+    props: {
+      products
+    },
   };
 }
