@@ -1,0 +1,16 @@
+.navbar {
+  @apply py-5;
+}
+
+.navbar__list {
+  @apply flex space-x-5 capitalize;
+}
+.navbar__listItem {
+  /* @apply mr-4; */
+}
+.navbarLogo {
+  @apply text-2xl;
+}
+.container {
+  @apply w-full max-w-[1000px] m-auto flex justify-between items-center;
+}

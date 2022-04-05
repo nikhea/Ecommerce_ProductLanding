@@ -1,0 +1,6 @@
+.productImage{
+    /* @apply ; */
+}
+.content{
+    @apply items-center text-center;
+}

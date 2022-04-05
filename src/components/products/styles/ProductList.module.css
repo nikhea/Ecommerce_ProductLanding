@@ -1,0 +1,15 @@
+/* .products {
+  @apply flex flex-wrap gap-4 justify-around;
+} */
+.products {
+  @apply m-auto grid lg:grid-cols-3 md:grid-cols-2 place-items-center;
+}
+.container {
+  @apply w-full max-w-[1000px] m-auto;
+}
+@layer {
+  .price {
+    /* @apply w; */
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,3 @@
+.banner {
+  @apply overflow-hidden h-screen bg-cyan-300 w-screen absolute;
+}
