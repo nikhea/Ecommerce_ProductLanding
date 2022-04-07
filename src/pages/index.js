@@ -3,6 +3,7 @@ import Styled from "styled-components";
 import tw from "twin.macro";
 import ProductsList from "../components/products/productsList";
 import { getProducts } from "../../services/products";
+import { getCategory } from "../../services/categories";
 import Header from "../components/Layouts/header";
 
 const AppContainer = Styled.div`
@@ -24,7 +25,9 @@ export default function Home({ products, messages }) {
 }
 
 export async function getStaticProps() {
-  const { products, messages } = await getProducts()
+  const { products, messages } = await getProducts();
+  const {category} = await getCategory();
+  console.log("props",category);
   return {
     props: {
       products,
@@ -33,4 +36,3 @@ export async function getStaticProps() {
     revalidate: true,
   };
 }
-
