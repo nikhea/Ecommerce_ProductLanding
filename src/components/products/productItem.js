@@ -22,7 +22,7 @@ const productItem = ({ product }) => {
             : `${product.title.substring(0, 20)} ...`}
         </h1>
         <p className={styles.price}>{product.price}$</p>
-
+        {product.rating.rate}
         <Rating rating={product.rating.rate} />
       </div>
     </div>

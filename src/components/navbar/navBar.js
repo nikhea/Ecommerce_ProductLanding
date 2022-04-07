@@ -1,7 +1,9 @@
 import Styled from "styled-components";
 import Link from "next/link";
 import styles from "./styles/NavBar.module.css";
-
+import { BiSearch } from "react-icons/bi";
+import { MdPersonOutline } from "react-icons/md";
+import { BsCart2 } from "react-icons/bs";
 const navBar = () => {
   return (
     <nav className={styles.navbar}>
@@ -21,6 +23,23 @@ const navBar = () => {
           </li>
           <li className={styles.navbar__listItem}>
             <Link href="/contact">contact</Link>
+          </li>
+        </ul>
+        <ul className={styles.navbar__list}>
+          <li className={styles.navbar__listItem}>
+            <Link href="/">
+              <BiSearch />
+            </Link>
+          </li>
+          <li className={styles.navbar__listItem}>
+            <Link href="/">
+              <BsCart2 />
+            </Link>
+          </li>
+          <li className={styles.navbar__listItem}>
+            <Link href="/">
+              <MdPersonOutline />
+            </Link>
           </li>
         </ul>
       </div>

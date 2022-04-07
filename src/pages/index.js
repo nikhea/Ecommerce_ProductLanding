@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import ProductsList from "../components/products/productsList";
 import { getProducts } from "../../services/products";
 import Header from "../components/Layouts/header";
+
 const AppContainer = Styled.div`
 ${tw`flex w-full h-full overflow-hidden`}
 
@@ -24,9 +25,7 @@ export default function Home({ products, messages }) {
 
 export async function getStaticProps() {
   const { products, messages } = await getProducts();
-
   console.log(products);
-
   return {
     props: {
       products,
