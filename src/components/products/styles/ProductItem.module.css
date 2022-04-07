@@ -1,6 +1,9 @@
 .productImage{
-    /* @apply ; */
+    @apply cursor-pointer;
 }
 .content{
     @apply items-center text-center;
+}
+.product{
+ @apply  py-10;
 }

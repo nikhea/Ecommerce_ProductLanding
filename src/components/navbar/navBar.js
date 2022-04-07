@@ -1,4 +1,4 @@
-import Styled from "styled-components";
+/* eslint-disable @next/next/link-passhref */
 import Link from "next/link";
 import styles from "./styles/NavBar.module.css";
 import { BiSearch } from "react-icons/bi";
@@ -9,7 +9,7 @@ const navBar = () => {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.navbarLogo}>
-          <h1>E-Shop</h1>
+          <Link href="/"><a><span>E</span>-Shop</a></Link>
         </div>
         <ul className={styles.navbar__list}>
           <li className={styles.navbar__listItem}>
@@ -27,7 +27,7 @@ const navBar = () => {
         </ul>
         <ul className={styles.navbar__list}>
           <li className={styles.navbar__listItem}>
-            <Link href="/">
+            <Link href="#">
               <BiSearch />
             </Link>
           </li>
@@ -37,11 +37,12 @@ const navBar = () => {
             </Link>
           </li>
           <li className={styles.navbar__listItem}>
-            <Link href="/">
+            <Link href="/profile">
               <MdPersonOutline />
             </Link>
           </li>
         </ul>
+        <div className={styles.Humbuger}>Humbuger</div>
       </div>
     </nav>
   );

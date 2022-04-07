@@ -1,8 +1,8 @@
 import axios from "axios";
-const url = `https://fakestoreapi.com/products`;
+const url = `https://fakestoreapi.com/products/categories`;
 // import { products } from "../data";
 module.exports = {
-  getProducts: async () => {
+  getCategory: async () => {
     const { data: products, status } = await axios.get(url);
     // const status = 200;
     let messages = null;

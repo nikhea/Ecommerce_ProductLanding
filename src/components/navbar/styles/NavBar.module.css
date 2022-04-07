@@ -1,16 +1,36 @@
 .navbar {
-  @apply py-5;
+  @apply py-5 ;
+
 }
 
 .navbar__list {
   @apply flex space-x-5 capitalize;
+  font-weight: 500;
 }
 .navbar__listItem {
-  /* @apply mr-4; */
+  @apply hover:text-violet-900 ;
+  
+}
+.navbar__listItem > svg {
+  @apply text-xl cursor-pointer hover:text-violet-900 hover:font-bold;  
+}
+.navbar__listItem > svg:hover {
+  /* font-weight: 300;   */
 }
 .navbarLogo {
-  @apply text-2xl;
+  @apply text-2xl cursor-pointer hover:text-violet-900;
+}
+
+.navbarLogo span {
+  @apply text-violet-900;
+  font-weight: 900;
 }
 .container {
-  @apply w-full max-w-[1000px] m-auto flex justify-between items-center;
+  @apply w-full max-w-[1000px] m-auto flex justify-between items-center ;
+}
+.navbar__list > li {
+  @apply hidden lg:block; 
+}
+.Humbuger{
+  @apply block lg:hidden;
 }
