@@ -18,7 +18,6 @@ module.exports = {
     }
   },
   getProduct: async (id) => {
-    // "https://fakestoreapi.com/products/1";
     console.log("product IIII", id);
     const { data: product, status } = await axios.get(`${url}/${id}`);
     try {

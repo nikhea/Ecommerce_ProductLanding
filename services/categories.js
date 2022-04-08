@@ -7,14 +7,12 @@ module.exports = {
     // const status = 200;
     let messages = null;
     try {
-      console.log("dxsdcsdcsd",category);
-      const data ={
-          category
-
-      }
+      const data = {
+        category,
+      };
       return data;
     } catch (error) {
-        return messages
+      return messages;
     }
   },
   getProduct: async (id) => {},
