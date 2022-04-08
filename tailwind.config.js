@@ -8,7 +8,12 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('./src/assets/images/BannerMain.jpg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
+    },
   },
   variants: {
     extend: {},

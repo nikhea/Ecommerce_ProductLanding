@@ -1,3 +1,11 @@
 .banner {
-  @apply overflow-hidden h-screen bg-cyan-300 w-screen absolute;
+  /* @apply overflow-hidden h-screen  bg-cover object-cover bg-no-repeat bg-fixed  block bg-[url('../../assets/images/BannerMain.jpg')] ; */
+  /* background-image: url('../../assets/images/BannerMain.jpg') */
+   @apply overflow-hidden h-screen  bg-cover object-cover bg-no-repeat bg-fixed bg-gray-300
+    ;
+  
+}
+
+.bannerContainer{
+  @apply relative;
 }
