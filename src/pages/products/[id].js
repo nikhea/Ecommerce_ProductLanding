@@ -1,10 +1,14 @@
 import { getProducts, getProduct } from "../../../services/products";
-
+import Head from "next/head";
 const ProductDetila = ({ product }) => {
   console.log(product);
   return (
     <div>
-      ProductDetila
+       <Head>
+        <title>{product.title}</title>
+        <meta name="description" content={product.description} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1>{product.title && product.title}</h1>
     </div>
   );
