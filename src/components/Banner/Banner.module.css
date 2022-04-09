@@ -1,11 +1,30 @@
 .banner {
   /* @apply overflow-hidden h-screen  bg-cover object-cover bg-no-repeat bg-fixed  block bg-[url('../../assets/images/BannerMain.jpg')] ; */
-  /* background-image: url('../../assets/images/BannerMain.jpg') */
-   @apply overflow-hidden h-screen  bg-cover object-cover bg-no-repeat bg-fixed bg-gray-300
-    ;
+  /* background-image: url('../../assets/images/BannerMain.jpg') bg-gradient-to-tr to-transparent from-black */
+  /* @apply absolute flex flex-wrap items-center justify-center place-items-center; to-gray-900 bg-gradient-to-b */
+  @apply absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-tr to-transparent from-black ;
+}
+ .content{
+   @apply  flex flex-col flex-wrap items-center justify-center px-10 text-center text-white place-items-center;
+  height: 100vh;
   
 }
-
-.bannerContainer{
-  @apply relative;
+.content > *{
+  @apply py-1;
+ 
+}
+.content h1{
+  @apply text-5xl uppercase lg:text-9xl;
+}
+.content h6{
+  @apply text-2xl uppercase lg:text-5xl;
+}
+.content p{
+  @apply text-sm uppercase lg:text-2xl;
+}
+.content a{
+  @apply px-3 py-3 mt-6 text-sm uppercase transition duration-500 ease-in rounded-full hover:bg-white hover:text-indigo-600 md:text-2xl bg-violet-500;
+}
+.bannerContainer {
+  @apply  bg-blend-multiply relative overflow-hidden h-screen  bg-cover object-cover bg-no-repeat bg-fixed bg-gray-300 block bg-[url('../../assets/images/banner2.jpg')];
 }

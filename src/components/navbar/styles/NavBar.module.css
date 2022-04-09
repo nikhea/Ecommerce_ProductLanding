@@ -1,5 +1,12 @@
 .navbar {
-  @apply py-5 ;
+  @apply sticky py-5 mb-2 shadow-lg shadow-violet-200 ;
+  
+  position: sticky !important;
+
+}
+
+.navbar >* {
+  position: sticky !important;
 
 }
 
