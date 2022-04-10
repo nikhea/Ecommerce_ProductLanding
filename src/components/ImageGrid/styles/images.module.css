@@ -1,0 +1,40 @@
+.Imagegrid {
+  @apply relative flex flex-col overflow-hidden cursor-pointer md:flex-row-reverse lg:flex-row;
+}
+.ItemFlex {
+  @apply relative top-0 left-0 flex flex-col self-start justify-center overflow-hidden lg:flex-col md:flex-col-reverse;
+}
+
+.container {
+  /* @apply flex items-center self-start justify-center object-cover; */
+  @apply relative flex justify-center object-cover overflow-hidden transition duration-500 ease-in transform scale-95 md:scale-105 hover:scale-100;
+}
+
+.container::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  opacity: 0.5;
+  /* @apply bg-violet-500 ; */
+  @apply bg-black;
+}
+.container h1 {
+  @apply absolute z-10 self-center px-3 py-3 overflow-hidden text-center text-white rounded-full place-items-center;
+  @apply text-sm uppercase transition duration-500 ease-in rounded-full hover:bg-white hover:text-indigo-600 bg-violet-500;
+}
+.container hover {
+  opacity: 1;
+}
+/* w-full max-w-[1000px] m-auto */
+
+.Imagegrid:nth-child(1) {
+}
+.Imagegrid:nth-child(2) {
+}
+.Imagegrid:nth-child(3) {
+  display: none;
+}
+/* top-64 left-24 */

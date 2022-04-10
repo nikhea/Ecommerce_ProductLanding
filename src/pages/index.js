@@ -5,9 +5,10 @@ import ProductsList from "../components/products/productsList";
 import { getProducts } from "../../services/products";
 import { getCategory } from "../../services/categories";
 import Banner from "../components/Banner/Banner";
+import ImageGrid from "../components/ImageGrid";
 
 const AppContainer = Styled.div`
-${tw` w-full h-full overflow-hidden`}
+${tw`w-full h-full overflow-hidden `}
 
 `;
 export default function Home({ products, messages }) {
@@ -19,6 +20,7 @@ export default function Home({ products, messages }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Banner/>
+      <ImageGrid/>
       <ProductsList products={products} />
     </AppContainer>
   );
@@ -26,8 +28,8 @@ export default function Home({ products, messages }) {
 
 export async function getStaticProps() {
   const { products, messages } = await getProducts();
-  const { category } = await getCategory();
-  console.log("props", category);
+  // const { category } = await getCategory();
+  // console.log("props", category);
   return {
     props: {
       products,
