@@ -1,0 +1,30 @@
+.features {
+  @apply w-full max-w-[1000px] m-auto mt-20 mb-10;
+}
+.features__title {
+  @apply text-center uppercase font-semibold mb-10;
+}
+.features__items {
+  @apply md:grid lg:grid-cols-3 md:grid-cols-2;
+  @apply mx-7;
+}
+.features__item {
+  @apply flex flex-col place-items-center mt-3 mb-3 hover:shadow-2xl px-7 py-7;
+
+  @apply transition duration-500 ease-in;
+}
+.features__svg > svg {
+  width: 573px;
+  height: 119px;
+}
+.features__content {
+  @apply text-center;
+}
+.features__content > * {
+}
+.content__text {
+  @apply mt-6 text-xl capitalize font-light;
+}
+.content__description {
+  @apply font-thin leading-6 mt-2 text-center text-sm;
+}
