@@ -7,7 +7,7 @@
 
 .container {
   /* @apply flex items-center self-start justify-center object-cover; */
-  @apply relative flex justify-center object-cover overflow-hidden transition duration-500 ease-in transform scale-95 md:scale-105 hover:scale-100;
+  @apply relative flex justify-center object-cover overflow-hidden transition duration-500 ease-in transform scale-[0.99] md:scale-105 hover:scale-100;
 }
 
 .container::after {
