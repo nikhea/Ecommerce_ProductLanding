@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Rating from "../Rating";
+import Rating from "../UI/Rating";
 import Trouses from "../../../public/img/trouses2.jpg";
 import styles from "./styles/ProductItem.module.css";
 const productItem = ({ product }) => {

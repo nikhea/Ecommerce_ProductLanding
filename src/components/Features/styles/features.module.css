@@ -4,12 +4,19 @@
 .features__title {
   @apply text-center uppercase font-semibold mb-10;
 }
+
+.features__title::after {
+  content: " ";
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+}
 .features__items {
   @apply md:grid lg:grid-cols-3 md:grid-cols-2;
   @apply mx-7;
 }
 .features__item {
-  @apply flex flex-col place-items-center mt-3 mb-3 hover:shadow-2xl px-7 py-7;
+  @apply flex flex-col place-items-center mt-3 mb-3 hover:shadow-2xl px-7 py-7 cursor-pointer;
 
   @apply transition duration-500 ease-in;
 }

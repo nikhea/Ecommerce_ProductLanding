@@ -1,0 +1,49 @@
+.footer {
+  @apply bg-black h-full w-full overflow-hidden;
+}
+.container {
+  @apply w-full max-w-[1100px] m-auto text-white;
+  @apply flex flex-col lg:flex-row-reverse flex-wrap justify-between;
+  /* @apply md:grid lg:grid-cols-3 md:grid-cols-2; */
+}
+.footer__grid {
+  /* @apply md:grid lg:grid-cols-3  md:grid-cols-3  md:gap-0 lg:gap-16 lg:py-12  px-3 ml-2; */
+  @apply  md:flex justify-between;
+  @apply lg:py-12  px-3 ml-2;
+  /* width:50% */
+  /* lg:w-2/4 */
+  
+}
+.content__title {
+  @apply capitalize leading-none;
+  @apply  lg:w-full;
+  /* @apply  w-1/2 ; */
+}
+.footerItem {
+  @apply flex flex-col py-3 lg:py-2;
+  @apply py-3 lg:py-2;
+}
+.footerItem__link {
+  @apply py-1 px-0  block;
+}
+.footer__form {
+  @apply py-11  px-3 font-medium ml-2  lg:ml-20 ;
+}
+.footer__form > form {
+  @apply lg:py-3 flex;
+}
+.footer__form > form > input {
+  @apply border-0 rounded-l-md py-2 pl-3 outline-none text-gray-600  font-medium;
+}
+.footer__form > form > input::placeholder {
+  @apply text-gray-600;
+}
+.footer__form > form > button {
+  @apply rounded-r-md px-3 md:px-9  capitalize bg-violet-800 ;
+  @apply py-2 text-center border-0;
+}
+.footerItem > a {
+  /* @apply flex flex-col py-3 lg:py-2; */
+  @apply py-3 lg:py-2 block   w-20;
+  /* w-20 */
+}

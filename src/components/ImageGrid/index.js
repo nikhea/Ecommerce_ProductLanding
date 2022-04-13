@@ -17,7 +17,6 @@ const ImageGrid = () => {
   //   GridWomenTwo,
   //   GridWomenThree,
   // ];
-  console.log(GridMenTwo);
   return (
     <div className={styles.Imagegrid}>
       <div className={styles.ItemFlex}>

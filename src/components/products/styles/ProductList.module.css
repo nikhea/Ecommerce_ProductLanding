@@ -1,14 +1,14 @@
 /* .products {
-  @apply flex flex-wrap gap-4 justify-around;
+  @apply flex flex-wrap justify-around gap-4;
 } */
 .products {
-  @apply m-auto grid lg:grid-cols-3 md:grid-cols-2 place-items-center;
+  @apply grid m-auto lg:grid-cols-3 md:grid-cols-2 place-items-center;
 }
 .container {
   @apply w-full max-w-[1000px] m-auto;
 }
 
   .title{
-    @apply   text-center uppercase font-semibold mb-10 mt-7;
+    @apply mb-10 font-semibold text-center uppercase text-violet-800 mt-7;
   }
 

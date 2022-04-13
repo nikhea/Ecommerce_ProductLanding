@@ -1,0 +1,24 @@
+.paginationContainer {
+  @apply flex justify-between mx-20 mb-10;
+}
+
+.LinkItem {
+  @apply hidden;
+}
+.paginationDisabled {
+  cursor: not-allowed;
+  @apply border-2 border-violet-600 text-violet-600;
+}
+.previousBtn {
+  @apply px-2 py-2 text-sm uppercase;
+  @apply transition duration-500 ease-in rounded-full;
+  @apply border-2 border-violet-600 text-violet-600;
+  /* @apply hover:bg-violet-600 hover:text-white; */
+}
+
+.nextBtn {
+  @apply px-2 py-2 text-sm uppercase;
+  @apply transition duration-500 ease-in rounded-full;
+  @apply border-2 border-violet-600 text-violet-600;
+  /* @apply hover:bg-violet-600 hover:text-white; */
+}
