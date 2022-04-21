@@ -7,12 +7,18 @@
 
 .container {
   @apply relative flex justify-center object-cover overflow-hidden transition duration-500 ease-in transform scale-[0.99] md:scale-105 hover:scale-100;
+  /* @apply object-contain; */
 }
-
+.container .img {
+  /* @apply object-contain; */
+}
+.img {
+  @apply object-cover;
+}
 .container::after {
   content: "";
   opacity: 0.5;
-  @apply bg-black top-0 bottom-0 left-0 right-0 absolute;
+  @apply absolute top-0 bottom-0 left-0 right-0 bg-black -z-10;
 }
 .container h1 {
   @apply absolute z-10 self-center px-3 py-3 overflow-hidden text-center text-white rounded-full place-items-center;

@@ -23,7 +23,7 @@ export default function Home({ products, messages }) {
       <Banner />
       <ProductsList products={products} />
       <Features />
-      <ImageGrid />
+       <ImageGrid />
     </AppContainer>
   );
 }

@@ -5,7 +5,7 @@ import Trouses from "../../../public/img/trouses2.jpg";
 import styles from "./styles/ProductItem.module.css";
 const productItem = ({ product }) => {
   return (
-    <div className={styles.product}>
+    <div  className={styles.product}>
    <Link href={`/products/${product.id}`}>
    <div className={styles.productImage}>
         <Image
